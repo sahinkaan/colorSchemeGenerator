@@ -1,0 +1,26 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form id="get-scheme-form">
+            <input class="color-picker" id="seed-color" type="color"/>
+            <select class="dropdown" id="scheme-modes" name="scheme-modes">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <input type="number" id="color-count" value="5" min="2" max="8">
+            <button class="get-scheme-but" id="get-scheme-but">Get color scheme</button>
+        </form>
+        <div class="color-scheme" id="color-scheme"
+            <!-- color scheme will be here -->
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px 150px;
+    grid-column-gap: 12px;
+    margin: 25px 15px;
+}
+
+.color-picker{
+    border:none;
+    height: 100%;
+    cursor: pointer;
+}
+
+.dropdown{
+    padding: 9px 13px;
+    outline-color: #D1D5DB;
+    scrollbar-arrow-color: red;
+    cursor: pointer;
+}
+
+.get-scheme-but{
+    background-color: white;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus,
+.get-scheme-but:focus
+{
+    outline: none;
+}
+
+.color-scheme{
+    display: grid;
+}
+
+.color-container{
+    text-align: center;
+}
+.color{
+    height: 300px;
+}
